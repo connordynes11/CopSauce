@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CopSauce — Small-Batch Sauces</title>
+  <meta name="description" content="CopSauce makes small-batch sauces with big flavor. Meet the lineup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">COP<span>SAUCE</span></a>
+    <nav>
+      <a href="#lineup">Lineup</a>
+      <a href="#story">Story</a>
+      <a href="#buy" class="btn btn-small">Get Some</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Small batch · Big flavor</p>
+        <h1>Sauce that<br><em>means business.</em></h1>
+        <p class="lede">CopSauce is a line of handcrafted sauces made in small batches with real ingredients. From everyday drizzle to serious heat, there's a bottle for every plate.</p>
+        <div class="hero-cta">
+          <a href="#lineup" class="btn">See the Lineup</a>
+          <a href="#buy" class="btn btn-ghost">Where to Buy</a>
+        </div>
+      </div>
+      <div class="hero-bottles" aria-hidden="true">
+        <svg class="bottle b1" viewBox="0 0 100 240"><use href="#bottle"/></svg>
+        <svg class="bottle b2" viewBox="0 0 100 240"><use href="#bottle"/></svg>
+        <svg class="bottle b3" viewBox="0 0 100 240"><use href="#bottle"/></svg>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Small Batch ★ Real Ingredients ★ No Shortcuts ★ Made With Heat ★ </span>
+        <span>Small Batch ★ Real Ingredients ★ No Shortcuts ★ Made With Heat ★ </span>
+      </div>
+    </div>
+
+    <!-- LINEUP -->
+    <section id="lineup" class="section">
+      <h2>The Lineup</h2>
+      <p class="section-sub">Pick your flavor. Pick your heat.</p>
+
+      <div class="grid">
+        <!-- To edit a sauce: change the name, description, color (--c), and heat (data-heat 1–5) -->
+        <article class="card" style="--c:#d7263d">
+          <svg class="card-bottle" viewBox="0 0 100 240" aria-hidden="true"><use href="#bottle"/></svg>
+          <h3>The Original</h3>
+          <p>The one that started it all. Tangy, garlicky, a little kick. Goes on everything.</p>
+          <div class="heat" data-heat="2"><span>Heat</span></div>
+        </article>
+
+        <article class="card" style="--c:#8c3b1f">
+          <svg class="card-bottle" viewBox="0 0 100 240" aria-hidden="true"><use href="#bottle"/></svg>
+          <h3>Smoky Chipotle</h3>
+          <p>Deep, smoky, slow-burn flavor. Made for wings, burgers, and anything off the grill.</p>
+          <div class="heat" data-heat="3"><span>Heat</span></div>
+        </article>
+
+        <article class="card" style="--c:#f46036">
+          <svg class="card-bottle" viewBox="0 0 100 240" aria-hidden="true"><use href="#bottle"/></svg>
+          <h3>Habanero Heat</h3>
+          <p>Bright, fruity, and seriously hot. For people who want to feel it.</p>
+          <div class="heat" data-heat="5"><span>Heat</span></div>
+        </article>
+
+        <article class="card" style="--c:#e2a400">
+          <svg class="card-bottle" viewBox="0 0 100 240" aria-hidden="true"><use href="#bottle"/></svg>
+          <h3>Garlic Gold</h3>
+          <p>Mild, buttery, loaded with roasted garlic. The crowd-pleaser.</p>
+          <div class="heat" data-heat="1"><span>Heat</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="section story">
+      <div>
+        <h2>The Story</h2>
+        <p>CopSauce started in a home kitchen with one goal: make a sauce worth putting on everything. After countless batches, taste tests, and a few too-hot mistakes, the recipes were dialed in.</p>
+        <p>Every bottle is still made in small batches with real peppers, real garlic, and zero shortcuts.</p>
+      </div>
+      <ul class="stats">
+        <li><strong>100%</strong><span>Real ingredients</span></li>
+        <li><strong>4</strong><span>Signature sauces</span></li>
+        <li><strong>0</strong><span>Shortcuts</span></li>
+      </ul>
+    </section>
+
+    <!-- BUY -->
+    <section id="buy" class="section buy">
+      <h2>Get Some</h2>
+      <p class="section-sub">Want a bottle (or five)? Reach out and we'll get you sorted.</p>
+      <div class="hero-cta center">
+        <a href="mailto:hello@example.com" class="btn">Order by Email</a>
+        <a href="https://instagram.com/" class="btn btn-ghost" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> CopSauce. All rights reserved.</p>
+  </footer>
+
+  <!-- Reusable bottle drawing; color comes from --c -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="bottle" viewBox="0 0 100 240">
+        <rect x="38" y="4" width="24" height="22" rx="4" fill="#111"/>
+        <path d="M40 26h20v26c0 8 22 18 22 40v130c0 7-5 12-12 12H30c-7 0-12-5-12-12V92c0-22 22-32 22-40z" fill="var(--c, #d7263d)"/>
+        <rect x="24" y="110" width="52" height="70" rx="6" fill="#fff8ee"/>
+        <text x="50" y="140" text-anchor="middle" font-family="Anton, sans-serif" font-size="15" fill="#111">COP</text>
+        <text x="50" y="158" text-anchor="middle" font-family="Anton, sans-serif" font-size="11" fill="var(--c, #d7263d)">SAUCE</text>
+        <path d="M30 70c4-6 8-10 8-18" stroke="#fff" stroke-opacity=".35" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.heat').forEach(el => {
+      const n = +el.dataset.heat;
+      for (let i = 1; i <= 5; i++) {
+        const dot = document.createElement('i');
+        if (i <= n) dot.className = 'on';
+        el.appendChild(dot);
+      }
+      el.setAttribute('aria-label', `Heat ${n} out of 5`);
+    });
+  </script>
+</body>
+</html>
