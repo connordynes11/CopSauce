@@ -96,6 +96,7 @@ h1, h2, h3, .logo { font-family: Anton, Impact, sans-serif; font-weight: 400; le
 .card-bottle { width: 80px; height: 190px; margin-bottom: 14px; }
 .card h3 { font-size: 1.6rem; color: var(--c); }
 .card p { color: var(--muted); margin: 8px 0 18px; font-size: .97rem; }
+.card .protein { color: var(--ink); font-weight: 700; text-transform: uppercase; font-size: .8rem; letter-spacing: 1px; margin: -6px 0 14px; }
 .heat { display: flex; justify-content: center; align-items: center; gap: 6px; }
 .heat span { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-right: 4px; }
 .heat i { width: 12px; height: 12px; border-radius: 50%; background: var(--line); }
